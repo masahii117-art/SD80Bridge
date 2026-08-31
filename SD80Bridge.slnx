@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SD80Common/SD80Common.vcxproj" Id="e4ca7ae8-1984-4263-8ed9-b5200801235b" />
+  <Project Path="SD80VirtualMidi/SD80VirtualMidi.vcxproj" Id="72a810c1-7a27-4d7d-955e-21bc5239b03f" />
+  <Project Path="SD80VirtualMidiGUI/SD80VirtualMidiGUI.vcxproj" Id="bf346811-b63a-49c0-a6fb-3b8adf50b1ca" />
+</Solution>

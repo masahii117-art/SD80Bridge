@@ -1,0 +1,47 @@
+; ============================================================
+; SD80WinUSB.inf
+; WinUSB test driver for EDIROL SD-80
+;
+; VID = 0582
+; PID = 0029
+; ============================================================
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = USBDevice
+ClassGUID   = {88BAE032-5A81-49F0-BC3D-A4FF138216D6}
+Provider    = %ManufacturerName%
+CatalogFile = SD80WinUSB.cat
+DriverVer   = 08/09/2026,1.0.0.0
+PnpLockdown = 1
+
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTamd64
+
+
+[Standard.NTamd64]
+%DeviceName% = USB_Install, USB\VID_0582&PID_0029
+
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+
+[USB_Install.Services]
+Include = winusb.inf
+Needs   = WINUSB.NT.Services
+
+
+[USB_Install.HW]
+AddReg = DeviceInterfaceGUIDs
+
+
+[DeviceInterfaceGUIDs]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{7D8E5F32-6B31-4F1D-9C52-3A7E8B1D4201}"
+
+
+[Strings]
+ManufacturerName = "SD80Bridge"
+DeviceName       = "EDIROL SD-80 WinUSB Interface"

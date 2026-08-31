@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="Microsoft.Windows.CppWinRT"
+           version="3.0.260715.1"
+           targetFramework="native" />
+  <package id="Microsoft.Windows.Devices.Midi2"
+           version="1.0.17-rc.4.25"
+           targetFramework="native" />
+</packages>
