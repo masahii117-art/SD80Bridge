@@ -108255,7 +108255,7 @@ LRESULT CALLBACK WndProc(
 
         DrawTextSimple(
             hdc,
-            L"Copyright © 2026  masahii  |  2026/08/30  |  Ver 1.0",
+            L"Copyright © 2026  masahii  |  2026/09/04  |  Ver 1.0.1",
             footerText,
             g_hFontMono,
             TEXT_COLOR,
@@ -108708,7 +108708,7 @@ INT_PTR CALLBACK About(
             {
                 SetWindowTextW(
                     hText[1],
-                    L"Copyright © 2026 masahii\r\n2026/08/30\r\nVer 1.0");
+                    L"Copyright © 2026 masahii\r\n2026/09/04\r\nVer 1.0.1");
 
                 // The original resource gives this static control only one
                 // line of height. Expand it so all three lines are visible.

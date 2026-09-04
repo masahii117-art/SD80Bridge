@@ -1077,7 +1077,7 @@ static bool ResetMidiSrv()
     // MidiSrv failure mode, so a forced termination is retained as a
     // deliberate fallback rather than removing the workaround.
     const DWORD pollMs = 250;
-    const DWORD stopTimeoutMs = 10000;
+    const DWORD stopTimeoutMs = 100;
 
     // After a forced termination, do not immediately start MidiSrv again.
     // Give SCM enough time to finish the terminated service instance and
@@ -1219,7 +1219,7 @@ static bool ResetMidiSrv()
                 << L"[MidiSrv] Waiting after forced termination..."
                 << std::endl;
 
-            Sleep(forcedTerminateWaitMs);
+          //  Sleep(forcedTerminateWaitMs);
             break;
         }
 
@@ -1386,7 +1386,7 @@ int main()
     // Windows MIDI Services or creating the Virtual MIDI endpoint.
     if (!ResetMidiSrv())
     {
-        std::wcerr << L"ERROR: MidiSrv reset failed. Cannot continue safely." << std::endl;
+    std::wcerr << L"ERROR: MidiSrv reset failed. Cannot continue safely." << std::endl;
         return 5;
     }
 
