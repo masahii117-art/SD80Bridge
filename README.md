@@ -35,7 +35,7 @@ SD80 Bridgeを起動することで、DAWからSD-80のMIDIポートを
 
 ## SD-80 BRIDGE データフロー
 
-![SD-80 BRIDGE データフロー](docs/SD80Bridge_DataFlow.png)
+![SD-80 BRIDGE データフロー](docs/SD80Bridge_DataFlow.pdf)
 
 ------------------------------------------------------------------------
 
